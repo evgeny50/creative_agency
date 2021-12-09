@@ -1,0 +1,71 @@
+@import 'reset.css';
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+a {
+    color          : #fff;
+    line-height    : 160%;
+    letter-spacing : 0.5px;
+    font-size      : 14px;
+    font-weight    : 600;
+    text-align     : center;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1220px;
+    margin   : 0 auto;
+    padding  : 0 10px;
+}
+
+.header {
+    background               : linear-gradient(96.61deg, #44CC88 2.13%, #5FD299 96.62%);
+    border-bottom-left-radius: 300px;
+    min-height               : 911px;
+
+    &__inner {
+        display        : flex;
+        justify-content: space-between;
+        align-items    : center;
+        padding-top    : 75px;
+    }
+
+    &__menu {
+        display        : flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+.menu-item {
+    margin-right: 42px;
+
+    &:hover {
+        cursor       : pointer;
+        border-bottom: 2px solid #fff;
+    }
+}
+
+.sign-up {
+    color      : #F7AB73;
+    font-style : normal;
+    font-weight: 800;
+    font-size  : 16px;
+    line-height: 160%;
+    padding    : 14px 48px;
+    background-color: #fff;
+    border-radius: 100px;
+}
