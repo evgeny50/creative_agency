@@ -12,7 +12,13 @@ html {
 
 
 body {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family   : 'Nunito Sans', sans-serif;
+    color         : #747474;
+    font-style    : normal;
+    font-weight   : normal;
+    font-size     : 16px;
+    line-height   : 160%;
+    letter-spacing: 0.5px;
 }
 
 a {
@@ -23,6 +29,19 @@ a {
     font-weight    : 600;
     text-align     : center;
     text-decoration: none;
+}
+
+.btn {
+    font-size     : 16px;
+    letter-spacing: 0.5px;
+    line-height   : 160%;
+    font-weight   : 800;
+    counter-reset : #fff;
+    padding       : 14px 33px;
+    border        : none;
+    border-radius : 100px;
+    color         : #fff;
+    cursor        : pointer;
 }
 
 .container {
@@ -46,12 +65,13 @@ a {
     &__menu {
         display        : flex;
         justify-content: flex-end;
-        align-items: center;
+        align-items    : center;
     }
 }
 
 .menu-item {
     margin-right: 42px;
+    transition  : all .2s;
 
     &:hover {
         cursor       : pointer;
@@ -60,12 +80,83 @@ a {
 }
 
 .sign-up {
-    color      : #F7AB73;
-    font-style : normal;
-    font-weight: 800;
-    font-size  : 16px;
-    line-height: 160%;
-    padding    : 14px 48px;
+    color           : #F7AB73;
+    font-style      : normal;
+    font-weight     : 800;
+    font-size       : 16px;
+    line-height     : 160%;
+    padding         : 14px 48px;
     background-color: #fff;
-    border-radius: 100px;
+    border-radius   : 100px;
 }
+
+.header__content {
+    display: flex;
+
+    &_title {
+        font-weight : 900;
+        font-size   : 48px;
+        line-height : 120%;
+        color       : #fff;
+        max-width   : 585px;
+        margin      : 139px 0 25px;
+        margin-right: 60px;
+    }
+
+    &_description {
+        font-weight   : normal;
+        font-size     : 20px;
+        line-height   : 160%;
+        letter-spacing: 1px;
+        color         : #fff;
+        max-width     : 567px;
+        padding-bottom: 59px;
+        position      : relative;
+        margin-bottom : 59px;
+    }
+
+    &_description::after {
+        content      : "";
+        position     : absolute;
+        width        : 135px;
+        height       : 10px;
+        bottom       : 0;
+        left         : 0;
+        border-bottom: 1px solid #fff;
+    }
+}
+
+.header__content_email-form {
+    position: relative;
+
+    .email {
+        display       : block;
+        border        : none;
+        padding       : 24px 197px 24px 33px;
+        color         : #9E9E9E;
+        font-size     : 14px;
+        line-height   : 160%;
+        letter-spacing: 0.5px;
+        border-radius : 100px;
+        max-width     : 400px;
+    }
+
+    .email-form-btn {
+        position        : absolute;
+        left            : 232px;
+        top             : 9px;
+        background-color: #F7AB73;
+    }
+}
+
+.header__content_img {
+    margin-top: 96px;
+    max-width : 305px;
+    margin-right: 45px;
+}
+
+.header__content_img-2 {
+    position: absolute;
+    margin-top: 236px;
+    max-width : 25%;
+}   
